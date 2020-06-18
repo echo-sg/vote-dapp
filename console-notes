@@ -1,0 +1,12 @@
+SMOKE TEST
+    Election.deployed().then(function(instance){app = 
+    instance}) === election = variable from migrationfile.
+    deployed function gives copy of deployed abstraction.
+    async operation thus .then used
+    instance of our app is injected in the callback and is assigned to app variable
+
+    app.address
+    app.candidate()    this gives value of candidate 1 therefore we are able to know that our contract is deployed succesfully
+    deploying this, it costed us ethereum which is visible on ganache
+    ganache debits this from the first account in the list.
+    
