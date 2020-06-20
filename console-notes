@@ -9,4 +9,43 @@ SMOKE TEST
     app.candidate()    this gives value of candidate 1 therefore we are able to know that our contract is deployed succesfully
     deploying this, it costed us ethereum which is visible on ganache
     ganache debits this from the first account in the list.
+
+
+
+    big number could be potentially higher than what js could handle .
+    variable lo function ke equal assign nahi kar sakte hum.. hume callback function ki zaroorat padegi.
+
+    use truffle test frequently so that you are able to rectify the bug if any ;
+
+
+    src me predefined html etc is because of unboxing the truffle pet-shop box.
+
+
+    app.vote(1[candidate id],{from : web3.geth.getAccounts[]} [this is metadata]) 
+    we get a transaction reciet along with this
     
+    acoounts come in whenerver we test 
+    
+    
+    har baar jab bhi hum smart contract me kuch changes karte hai to unhe check 
+    aur monitor karne ke liye test folder ki files me 
+    changes karna zaroori ho jaat hai.taaki check simultaneously
+    hota rahe.
+        first step is always to get a copy of deployed contract.
+        yaha hum basically ek ideal case ka example bhi rahe hai pehle ...
+
+
+to caet vote from client side==
+change index.html
+change app.js
+    list candidates in from
+    handle form submission
+    hide form if already voted    
+     
+
+everytime we cast our vote metamask will open up to confirm this transaction and it will cost to vote.
+
+we make use of events to help client side application to respond to real time events.
+
+we want an event to trigger whenever we cast a vote.
+jab hum contract ko migrate karenge to exisiting votes chale jaayenge kyuki states are resetted
